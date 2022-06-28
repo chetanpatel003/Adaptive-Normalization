@@ -13,8 +13,8 @@ dataset= pd.read_csv("dataset.csv", skiprows=3)
 cols = list(dataset)[5:11]
 dataset = dataset[cols].astype(float)
 
-## Normalising dataset using StandardScaler
-scaler = StandardScalar()
+## Normalising dataset using MinMaxScalar
+scaler = MinMaxScalar()
 scaler = scaler.fit(dataset)
 dataset = scaler.transform(dataset)
 
