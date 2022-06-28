@@ -14,7 +14,7 @@ cols = list(dataset)[5:11]
 dataset = dataset[cols].astype(float)
 
 ## Normalising dataset using StandardScaler
-scaler = MinMaxScaler()
+scaler = StandardScalar()
 scaler = scaler.fit(dataset)
 dataset = scaler.transform(dataset)
 
